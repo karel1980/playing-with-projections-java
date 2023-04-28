@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.function.Consumer;
 
 public class EventStore {
-    private Consumer<Event>[] projections;
+    private final Consumer<Event>[] projections;
 
     public EventStore(Consumer<Event>... projections) {
         this.projections = projections;
